@@ -48,7 +48,7 @@ button {
   font-size: 22px;
   border: 0;
 }
-button:hover {
+button:active {
   filter: brightness(1.5);
 }
 #result {
