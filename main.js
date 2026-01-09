@@ -17,11 +17,11 @@ function result(){
         value = "";
         return;
     }
-    if(value == Infinity){
+    const res = eval(value);
+    if(res == Infinity){
         display.innerText = "Error";
         return;
     }
-    const res = eval(value);
     value = res;
     display.innerText = res;
 }
