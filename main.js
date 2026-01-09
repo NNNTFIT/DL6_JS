@@ -1,6 +1,7 @@
 const display = document.getElementById("display");
 let value = "";
 function add(x){
+
     value += x;
     if(display.innerText == "0"){
         display.innerText = value;
@@ -11,6 +12,10 @@ function add(x){
 }
 
 function result(){
+    if(value.length == 0){
+        display.innerText = "0";
+        return;
+    }
     const last = (value.length)-1;
     if(value[0] == "/" || value[0] == "*" || value[last] == "+" || value[last] == "-" || value[last] == "/" || value[last] == "*"){
         display.innerText = "Error";
@@ -36,5 +41,4 @@ function delete1(){
         return;
     }
     display.textContent = value;
-    
 }
