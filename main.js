@@ -17,6 +17,10 @@ function result(){
         value = "";
         return;
     }
+    if(value == Infinity){
+        display.innerText = "Error";
+        return;
+    }
     const res = eval(value);
     value = res;
     display.innerText = res;
