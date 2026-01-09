@@ -7,6 +7,30 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <div class="calculator">
+        <div id="display" class="display" >0</div>
+        <div class="btns">
+            <button id="tools" onclick="deleteAll()">AC</button>
+            <button id="tools" onclick="delete1()">DEL</button>
+            <button id="tools" onclick="add('%')">%</button>
+            <button id="tools" onclick="add('/')">÷</button>
+            <button id="number" onclick="add('7')">7</button>
+            <button id="number" onclick="add('8')">8</button>
+            <button id="number" onclick="add('9')">9</button>
+            <button id="tools" onclick="add('*')">x</button>
+            <button id="number" onclick="add('4')">4</button>
+            <button id="number" onclick="add('5')">5</button>
+            <button id="number" onclick="add('6')">6</button>
+            <button id="tools" onclick="add('-')">-</button>
+            <button id="number" onclick="add('1')">1</button>
+            <button id="number" onclick="add('2')">2</button>
+            <button id="number" onclick="add('3')">3</button>
+            <button id="tools" onclick="add('+')">+</button>
+            <button id="number" onclick="add('.')">.</button>
+            <button id="number" onclick="add('0')">0</button>
+            <button id="result" onclick="result()">=</button>
+        </div>
+    </div>
+    <script src="main.js"></script>
 </body>
 </html>
