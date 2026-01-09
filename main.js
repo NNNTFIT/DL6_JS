@@ -17,11 +17,12 @@ function result(){
         return;
     }
     const last = (value.length)-1;
-    if(value[0] == "/" || value[0] == "*" || value[last] == "+" || value[last] == "-" || value[last] == "/" || value[last] == "*"){
+    if ("*/.".includes(value[0]) || "+-*/.".includes(value[last])){
         display.innerText = "Error";
         value = "";
         return;
     }
+
     const res = eval(value);
     if(res == Infinity){
         display.innerText = "Error";

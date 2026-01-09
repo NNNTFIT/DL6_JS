@@ -9,6 +9,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: black;
 }
 .calculator {
   width: 100%;
@@ -38,7 +39,7 @@ body {
   height: 100%;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(5, fit-content);
+  grid-template-rows: repeat(4, fit-content);
   gap: 8px;
   border-radius: 10px;
 }
@@ -51,7 +52,6 @@ button:hover {
   filter: brightness(1.5);
 }
 #result {
-  grid-column: span 2;
   background-color: #46366f;
   color: white;
 }
@@ -69,5 +69,6 @@ button:hover {
     width: 100%;
     max-width: none;
     height: 100vh;
+    border-radius: 0;
   }
 }
